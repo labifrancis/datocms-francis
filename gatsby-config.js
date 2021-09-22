@@ -14,10 +14,8 @@ module.exports = {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
         headers: {
-          "/*": [
-            "Basic-Auth: someuser:somepassword anotheruser:anotherpassword",
-          ],
-          "/my-page": [
+
+          "/404.html/*": [
             // matching headers (by type) are replaced by Gatsby Cloud with more specific routes
             "Basic-Auth: differentuser:differentpassword",
           ],
